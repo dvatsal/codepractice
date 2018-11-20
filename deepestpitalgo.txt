@@ -1,0 +1,13 @@
+
+    1) Mark the first element as P in the working set
+    2) Read an item while Q is not marked
+        If lesser than the previous, keep going: 2)
+        If greater or equal than the previous, mark the previous as Q
+        If you run out of numbers then it is no real pit, goto 6)
+    3) Read an item while R is not marked
+        If greater than the previous, keep going: 3)
+        If lesser or equal than the previous, mark the one before it as R
+        If you run out of numbers, mark the last one as R, goto 4)
+    4) Decide if this is better than the best, it's quite simple
+    5) Mark the previous element as P in the working set, set Q = R = null, go to 2) if you have any item left
+    6) If the best is 0 deep or null, then no pit found
